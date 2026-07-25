@@ -29,7 +29,9 @@ body{padding:18px 14px 28px}
 .value{margin-top:5px;font-size:21px;font-weight:700;word-break:break-word}
 .links-section{margin-top:17px}.links-section h2{margin:0 0 12px;text-align:center;color:var(--burgundy-dark);font:30px Georgia,serif}
 .links{display:grid;grid-template-columns:1fr 1fr;gap:12px}
-.link-card{display:block;padding:18px;text-decoration:none;color:var(--ink);background:#fff;border:1px solid #d6c6bf;border-radius:15px}
+.link-card{display:flex;flex-direction:column;justify-content:center;width:100%;min-height:104px;padding:18px;text-decoration:none;color:var(--ink);background:#fff;border:1px solid #d6c6bf;border-radius:15px;cursor:pointer;touch-action:manipulation;-webkit-tap-highlight-color:rgba(238,7,46,.14)}
+.link-card:hover,.link-card:focus-visible{border-color:var(--burgundy);box-shadow:0 8px 22px rgba(48,18,18,.14);transform:translateY(-1px)}
+.link-card:active{transform:translateY(0)}
 .link-card strong{display:block;margin-bottom:5px;color:var(--burgundy-dark);font:22px Georgia,serif}
 .footer{text-align:center;color:var(--muted);padding-top:18px}
 @media(max-width:700px){.wifi-grid,.links{grid-template-columns:1fr}.wifi-card{padding:20px 16px}.wifi-card h1{font-size:34px}.wifi-item{padding:14px 16px}.links-section{margin-top:14px}.link-card{padding:16px 18px}}
@@ -51,8 +53,8 @@ body{padding:18px 14px 28px}
   <div class="links-section">
     <h2>Helpful Links</h2>
     <div class="links">
-      <a class="link-card" href="https://tinyurl.com/24aeyx4c" target="_blank"><strong>Digital Guest Guide</strong>House information, local recommendations, and helpful stay details.</a>
-      <a class="link-card" href="https://www.smokiestreehouse.com" target="_blank"><strong>Book Direct & Save</strong>Visit our website for a future stay.</a>
+      <a class="link-card" href="https://tinyurl.com/24aeyx4c" target="_blank" rel="noopener noreferrer" aria-label="Open the Digital Guest Guide"><strong>Digital Guest Guide</strong>House information, local recommendations, and helpful stay details.</a>
+      <a class="link-card" href="https://www.smokiestreehouse.com" target="_blank" rel="noopener noreferrer" aria-label="Open the Smokies Treehouse booking website"><strong>Book Direct & Save</strong>Visit our website for a future stay.</a>
     </div>
   </div>
   <div class="footer">Smokies Treehouse · Sevierville, Tennessee</div>
